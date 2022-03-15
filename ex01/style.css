@@ -23,12 +23,48 @@ body {
     width: 50vw;
 }
 
+.quote {
+    font-style: italic;
+}
+
 .find-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 50px 0 50px 50px;
+}
+
+.icons {
+    display: row;
 }
 
 .social-icon {
     width: 50px;
     height: 50px;
     margin-right: 20px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.midia-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+    background-color: #999999;
+    color: white;
+    padding: 5px 0 5px;
 }
