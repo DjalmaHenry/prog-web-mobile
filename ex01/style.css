@@ -3,6 +3,10 @@ body {
     font-family: sans-serif;
 }
 
+a {
+    color: #e6e6e6;
+}
+
 .header {
     display: flex;
     align-items: center;
