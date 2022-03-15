@@ -23,10 +23,6 @@ body {
     width: 50vw;
 }
 
-.quote {
-    font-style: italic;
-}
-
 .find-me {
     display: flex;
     align-items: center;
