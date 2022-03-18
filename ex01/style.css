@@ -1,6 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     background-color: #e6e6e6;
     font-family: sans-serif;
+}
+
+.container {
+    padding: 10px;
 }
 
 a {
@@ -22,9 +31,14 @@ a {
     border-radius: 100%;
 }
 
+.user-name {
+    margin: 1rem 0;
+}
+
 .description {
     text-align: justify;
     width: 50vw;
+    margin-bottom: 1.5rem;
 }
 
 .find-me {
@@ -38,12 +52,19 @@ a {
 .icons {
     display: flex;
     flex-direction: row;
+    margin-left: -5px;
 }
 
 .social-icon {
     width: 50px;
     height: 50px;
     margin: 0 10px 0 10px;
+}
+
+.insta-icon {
+    padding: 0 0.3rem;
+    margin-right: 0.3rem;
+    border-right: 1px solid #5e5e5e;
 }
 
 .media {
@@ -68,4 +89,61 @@ a {
     background-color: #999999;
     color: white;
     padding: 5px 0 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    background-color: #d1d1d1;;
+}
+
+.text-footer {
+    text-align: center;
+    margin: 2rem 0 1rem;
+}
+
+.link-footer {
+    color: blue;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .user-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .user-name {
+        width: 300px;
+        text-align: center;
+    }
+
+    .description {
+        width: 80vw;
+    }
+
+    .quote {
+        text-align: center;
+        width: 80vw;
+        margin-top: 20px;
+    }
+
+    .find-me {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .title-find-me {
+        margin: 1rem 0;
+    }
+
+    .media {
+        flex-direction: column;
+    }
+
+    .midia-content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
