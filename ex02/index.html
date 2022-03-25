@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Conversor de moeda</title>
+  
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+  
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com">
+    <link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap" 
+          rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <h1 class="heading text-center display-2">
+        Conversor de moeda
+    </h1>
+  
+    <hr>
+    <div class="container">
+  
+        <div class="main">
+  
+            <div class="form-group">
+                <label for="taxa">
+                    Taxa de conversão: 
+                </label>
+                <input type="text" 
+                       class="form-control taxa" 
+                       placeholder="0.00" 
+                       id="taxa">
+            </div>
+
+            <div class="text-center btn-container">
+
+                <button class="btn btn-primary convert m-2 confirm" 
+                        onclick="confirmarTaxa()">
+                     Confirmar
+              </button>
+  
+                <button class="btn btn-primary m-2 reset" 
+                        onclick="resetarTaxa()">
+                   Resetar
+              </button>
+            </div>
+  
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">USD $</span>
+                        </div>
+                        <input type="text" 
+                       class="form-control searchBox" 
+                       placeholder="0.00" 
+                       id="usd">
+                    </div>
+                </div>
+  
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">BRL R$</span>
+                        </div>
+                        <input type="text" 
+                       class="form-control" 
+                       placeholder="0.00" 
+                       id="brl">
+                    </div>
+                </div>
+            </div>
+  
+            <div class="text-center btn-container">
+
+                <button class="btn btn-primary convert m-2 usd" 
+                        onclick="converterUSD()">
+                        Converter USD -> BRL
+              </button>
+
+                <button class="btn btn-primary m-2 brl" 
+                        onclick="converterBRL()">
+                        Converter BRL -> USD
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  
+</html>
