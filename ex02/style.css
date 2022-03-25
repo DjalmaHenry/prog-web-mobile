@@ -38,6 +38,10 @@ label {
     justify-content: space-between;
 }
 
+input {
+    color: green;
+}
+
 input:disabled {
     cursor: not-allowed;
 }
@@ -49,20 +53,6 @@ input:disabled {
 .btn:disabled {
     cursor: not-allowed;
     background-color: gray;
-}
-  
-#finalAmount {
-    font-family: 'Lobster', cursive;
-    display: none;
-    margin: 50px auto;
-}
-  
-#finalAmount h2 {
-    font-size: 50px;
-}
-  
-.finalValue {
-    font-family: 'Amiri', serif;
 }
 
 .text-footer {
@@ -90,8 +80,5 @@ input:disabled {
     }
     hr {
         width: 75%;
-    }
-    #finalAmount h2, .finalValue {
-        font-size: 40px;
     }
 }
