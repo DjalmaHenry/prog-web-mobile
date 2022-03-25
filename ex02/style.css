@@ -66,6 +66,10 @@ input:disabled {
 }
   
 @media (max-width: 768px) {
+    h1.heading {
+        font-size: 2rem;
+    }
+
     hr {
         width: 60%;
     }
