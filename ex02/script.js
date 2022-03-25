@@ -23,7 +23,7 @@ let brlButton = document.querySelector(".brl");
 brlButton.disabled = true;
 
 function confirmarTaxa() {
-    if(taxaInput.value == 0) {
+    if(taxaInput.value == 0 || taxaInput.value == null) {
         alert('Erro, preencha o campo da taxa.');
         return;
     }
@@ -52,11 +52,19 @@ function resetarTaxa() {
 }
 
 function converterUSD () {
+    if(usdInput.value == 0 || usdInput.value == null) {
+        alert('Erro, preencha o campo de USD.');
+        return;
+    }
     usd = usdInput.value;
     brlInput.value = usd * taxa;
 }
 
 function converterBRL () {
+    if(brlInput.value == 0 || brlInput.value == null) {
+        alert('Erro, preencha o campo de BRL.');
+        return;
+    }
     brl = brlInput.value;
     usdInput.value = brl / taxa;
 }
