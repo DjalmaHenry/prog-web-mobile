@@ -20,18 +20,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Contador</h1>
-    <div class="counter-one" onclick="clickDiv(counter.one)">
-        <p>Clicks: <span id="counter-one">0</span></p>
+    <h1>Criador de Contador</h1>
+    <div class="form-group">
+        <label for="taxa">
+            Nome do contador: 
+        </label>
+        <input type="text" 
+               class="form-control" 
+               placeholder="contador de..." 
+               id="counter-name">
         <button class="btn btn-success convert m-2 confirm" 
-        onclick="reset(counter.one)">RESET</button>
+        onclick="createCounter()">Criar contador</button>
     </div>
-    <div class="counter-two" onclick="clickDiv(counter.two)">
-        <p>Clicks: <span id="counter-two">0</span></p>
-        <button class="btn btn-success convert m-2 confirm" 
-        onclick="reset(counter.two)">RESET</button>
+
+    <div id="counters">
+        <div id="0"></div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
+<footer>
+    <p class="text-footer">
+    Desenvolvido por <a class="link-footer" href="https://github.com/DjalmaHenry" target="_blank">DjalmaHenry</a>
+    </p>
+</footer>
 </html>
