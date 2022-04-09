@@ -1,5 +1,5 @@
-let id = 0;
-let counter = [];
+let id = 0; // id do contador
+let counter = []; // array de contadores
 
 function createCounter() {
   let id = getNextId(); // pega o id mais alto
@@ -39,12 +39,12 @@ function createCounter() {
   divCounters.appendChild(elementDiv); //Adiciona a div a div de contadores
 }
 
-function getNextId() {
+function getNextId() { // pega o id mais alto
   return id++;
 }
 
-function incrementCounter(e) {
-  e.innerHTML = ++counter[e.id]; // incrementa o contador
+function incrementCounter(e) { // incrementa o contador
+  e.innerHTML = ++counter[e.id];
 }
 
 function reset(e) { // reseta o contador
