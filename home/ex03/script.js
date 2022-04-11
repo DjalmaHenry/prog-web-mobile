@@ -2,12 +2,19 @@ let id = 0; // id do contador
 let counter = []; // array de contadores
 
 function createCounter() {
+  const text = document.getElementById("counter-name").value; // pega o valor do input
+
+  if (text.length == 0) { // se o input estiver vazio
+    alert("Digite um nome para o contador!");
+    return;
+  }
+
+  document.getElementById("counter-name").value = ""; // limpa o input
+
   let id = getNextId(); // pega o id mais alto
 
   const divCounters = document.getElementById("counters"); // pega o div que contém os contadores
 
-  const text = document.getElementById("counter-name").value; // pega o valor do input
-  document.getElementById("counter-name").value = ""; // limpa o input
 
   const elementDiv = document.createElement("div"); // cria um novo div
 
