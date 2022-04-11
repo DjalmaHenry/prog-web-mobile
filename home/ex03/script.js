@@ -21,7 +21,7 @@ function createCounter() {
   p2.id = id; // atribui o id
 
   p.innerHTML = text; // atribui o texto do input ao p
-  button.innerHTML = "Reset"; // atribui o texto do button ao button
+  button.innerHTML = "Resetar"; // atribui o texto do button ao button
   counter.push(0); // adiciona o contador ao array
   p2.innerHTML = counter[id];  // atribui o valor do contador ao p2
 
@@ -35,12 +35,17 @@ function createCounter() {
   elementDiv.appendChild(p); //Adiciona o nome a div
   elementDiv.appendChild(p2); //Adiciona o contador a div
   elementDiv.appendChild(button); //Adiciona o botao de reset a div
-  elementDiv.style.backgroundColor = "#f0" + id.toString() * 2; // atribui a cor de fundo ao div do contador
+  elementDiv.style.backgroundColor = getRandomColor(); // atribui a cor de fundo ao div do contador
   divCounters.appendChild(elementDiv); //Adiciona a div a div de contadores
 }
 
 function getNextId() { // pega o id mais alto
   return id++;
+}
+
+function getRandomColor() { // gera uma cor aleatoria
+  let color = "#" + parseInt(Math.random() * 0xffffff).toString(16).padStart(6, "0");
+  return color;
 }
 
 function incrementCounter(e) { // incrementa o contador

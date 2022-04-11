@@ -21,14 +21,26 @@ h1 {
 }
 
 .counter {
+    cursor: pointer;
+    user-select: none;
+    width: 400px;
+    margin: 1rem;
     display: flex;
     flex-direction: row;
     border-radius: 10px;
+    justify-content: space-between;
 }
 
 .counter button {
     border-radius: 10px;
     margin-left: 5px;
+}
+
+.counter p {
+    overflow: hidden; 
+    width: 150px;
+    white-space:nowrap;
+    text-overflow: ellipsis; 
 }
 
 @media (max-width: 768px) {
