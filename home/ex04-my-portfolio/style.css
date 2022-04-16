@@ -278,19 +278,21 @@ nav.show div.icon-close {
 #home {
   overflow: hidden;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #home .container {
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #home .image {
   position: relative;
-  width: 240px;
-  height: 200px;
+  width: 300px;
+  height: 270px;
 }
 
 #home .image::before {
@@ -300,13 +302,12 @@ nav.show div.icon-close {
   background: rgb(28, 7, 30);
   position: absolute;
   top: -14.8%;
-  left: 56.7%;
+  left: 26.7%;
   z-index: 0;
 }
 
 #home .image img {
   position: relative;
-  left: 5.5rem;
 }
 
 #home .image::before {
@@ -331,19 +332,21 @@ nav.show div.icon-close {
 #about {
   background: var(--body-color-second);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #about .container {
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #about .image {
   position: relative;
-  width: 550px;
-  height: 550px;
+  width: 300px;
+  height: 300px;
 }
 
 #about .image::before {
@@ -359,7 +362,6 @@ nav.show div.icon-close {
 
 #about .image img {
   position: relative;
-  left: 5rem;
 }
 
 #about .image img,
@@ -633,6 +635,7 @@ footer .social a:hover {
 
   /* home */
   #home .container {
+    display: grid;
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 auto;
@@ -645,7 +648,7 @@ footer .social a:hover {
   #home .image::before {
     position: absolute;
     top: -14.8%;
-    left: 16.7%;
+    left: 22.7%;
   }
 
   #home .image img {
@@ -662,6 +665,7 @@ footer .social a:hover {
 
   /* about */
   #about .container {
+    display: grid;
     margin: 0 auto;
     grid-auto-flow: column;
   }
