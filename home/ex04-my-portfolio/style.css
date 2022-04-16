@@ -330,6 +330,10 @@ nav.show div.icon-close {
 
 #about {
   background: var(--body-color-second);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #about .container {
@@ -338,6 +342,8 @@ nav.show div.icon-close {
 
 #about .image {
   position: relative;
+  width: 550px;
+  height: 550px;
 }
 
 #about .image::before {
@@ -346,13 +352,14 @@ nav.show div.icon-close {
   width: 100%;
   background: rgb(28, 7, 30);
   position: absolute;
-  top: -12.3%;
-  left: -33%;
+  top: -15.3%;
+  left: -35%;
   z-index: 0;
 }
 
 #about .image img {
   position: relative;
+  left: 5rem;
 }
 
 #about .image img,
@@ -547,7 +554,7 @@ footer .social a:hover {
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  padding: 0.8rem;
+  padding: 1rem;
   clip-path: circle();
   font-size: 1.5rem;
   line-height: 0;
@@ -657,6 +664,17 @@ footer .social a:hover {
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
+  }
+
+  #about .image {
+    position: relative;
+    width: 350px;
+    height: 350px;
+  }
+
+  #about .image img {
+    position: relative;
+    left: 0;
   }
 
   /* services */
