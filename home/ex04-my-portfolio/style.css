@@ -277,6 +277,10 @@ nav.show div.icon-close {
 /*====  HOME ============================ */
 #home {
   overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #home .container {
@@ -302,7 +306,7 @@ nav.show div.icon-close {
 
 #home .image img {
   position: relative;
-  left: 3.93rem;
+  left: 5.5rem;
 }
 
 #home .image::before {
@@ -612,6 +616,12 @@ footer .social a:hover {
 
   main {
     margin-top: var(--header-height);
+  }
+
+  #home {
+    overflow: hidden;
+    width: 100%;
+    display: block;
   }
 
   /* home */
