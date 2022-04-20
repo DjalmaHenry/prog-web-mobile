@@ -315,7 +315,7 @@ nav.show div.icon-close {
 }
 
 #home .text {
-  margin: 2rem 1.5rem 0 1.5rem;
+  margin: 2rem 1rem 0 1rem;
   text-align: center;
 }
 
@@ -328,6 +328,7 @@ nav.show div.icon-close {
 }
 
 #home .skills {
+  width: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -680,6 +681,7 @@ footer .social a:hover {
     order: 0;
     max-width: 24rem;
     text-align: left;
+    margin: 2rem 1.5rem 0 1.5rem;
   }
 
   /* about */
@@ -724,6 +726,10 @@ footer .social a:hover {
 
   #contact .text {
     max-width: 25rem;
+  }
+
+  #contact .text p {
+    max-width: 380px;
   }
 
   /* footer */
