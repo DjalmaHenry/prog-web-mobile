@@ -308,7 +308,6 @@ nav.show div.icon-close {
   border: 2px solid transparent;
   border-radius: 10px;
   background: var(--body-color-alt);
-  background-size: cover;
 }
 
 .card:hover {
