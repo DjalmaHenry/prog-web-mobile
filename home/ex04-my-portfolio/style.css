@@ -102,6 +102,16 @@ body {
 }
 
 /*====  LAYOUT ============================ */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #3D3D3D
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--base-color);
+  border-radius: 10px;
+}
+
 .container {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
