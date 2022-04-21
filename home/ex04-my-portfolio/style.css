@@ -338,10 +338,12 @@ nav.show div.icon-close {
 }
 
 #home .skills {
-  width: 200px;
+  width: 100vw;
+  padding: 0 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 #home .skills img {
