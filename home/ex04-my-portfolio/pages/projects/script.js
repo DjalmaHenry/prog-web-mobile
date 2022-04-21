@@ -40,12 +40,13 @@ function backToTop() {
   }
 }
 
-/* When Scroll */
+/* Quando Scroll */
 window.addEventListener("scroll", function () {
   changeHeaderWhenScroll();
   backToTop();
 });
 
+/* Gerador de lista de repositórios do GitHub */
 const url = "https://api.github.com/users/DjalmaHenry/repos";
 let repos = [];
 
@@ -81,7 +82,6 @@ const fetchRepos = () => {
     .then((res) => res.json())
     .then((data) => {
       repos = data;
-      console.log(repos);
       gerarListaRepos();
     });
 };

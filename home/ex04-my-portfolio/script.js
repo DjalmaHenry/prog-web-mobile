@@ -100,7 +100,7 @@ function activateMenuAtCurrentSection() {
     }
 }
 
-/* When Scroll */
+/* Quando Scroll */
 window.addEventListener('scroll', function() {
     changeHeaderWhenScroll()
     backToTop()
