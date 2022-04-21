@@ -696,6 +696,12 @@ footer .social a:hover {
     margin: 2rem 1.5rem 0 1.5rem;
   }
 
+  #home .skills {
+    width: 200px;
+    padding: 0;
+    justify-content: left;
+  }
+
   /* about */
   #about .container {
     display: grid;
