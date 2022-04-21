@@ -436,6 +436,21 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+.projects-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-redirect {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*====  TESTIMONIALS ============================ */
 #testimonials {
   background: var(--body-color-second);
@@ -517,7 +532,6 @@ nav.show div.icon-close {
   margin-bottom: 2rem;
 }
 
-#contact .button i,
 #contact ul li i {
   font-size: 1.5rem;
   margin-right: 0.625rem;
@@ -720,7 +734,7 @@ footer .social a:hover {
     left: 0;
   }
 
-  /* services */
+  /* projects */
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -728,6 +742,10 @@ footer .social a:hover {
   .card {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .projects-redirect {
+    width: 355px;
   }
 
   /* testimonials */
